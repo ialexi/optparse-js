@@ -4,10 +4,9 @@
 // 
 //  See README.md for license.
 //                                                        
-var optparse = {};
-try{ optparse = exports } catch(e) {}; // Try to export the lib for node.js
-(function(self) {
-var VERSION = '1.0';
+var optparse = exports;
+
+var VERSION = module.pkg.version();
 var LONG_SWITCH_RE = /^--\w/;
 var SHORT_SWITCH_RE = /^-\w/;
 var NUMBER_RE = /^(0x[A-Fa-f0-9]+)|([0-9]+\.[0-9]+)|(\d+)$/;
@@ -303,7 +302,5 @@ OptionParser.prototype = {
     }
 }
 
-self.VERSION = VERSION;
-self.OptionParser = OptionParser;
-
-})(optparse);
+optparse.VERSION = VERSION;
+optparse.OptionParser = OptionParser;
