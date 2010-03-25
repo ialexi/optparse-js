@@ -1,8 +1,12 @@
 {
   "name": "optparse",
   "description": "Command line option parser for Javascript",
-  "version": "0.1.1",
-  "lib": "src",
+  "version": "0.1.2",
+  
+  "directories": {
+    "lib": "src"
+  },
+  
   "repositories": [
     { "type": "git", "url": "git://github.com/seedjs/optparse-js.git" }
   ]
