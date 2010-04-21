@@ -1,7 +1,7 @@
 {
   "name": "optparse",
   "description": "Command line option parser for Javascript",
-  "version": "0.1.2",
+  "version": "0.1.3",
   
   "directories": {
     "lib": "src"

@@ -6,7 +6,7 @@
 //                                                        
 var optparse = exports;
 
-var VERSION = module.pkg.version();
+var VERSION = module.ownerPackage.get("version");
 var LONG_SWITCH_RE = /^--\w/;
 var SHORT_SWITCH_RE = /^-\w/;
 var NUMBER_RE = /^(0x[A-Fa-f0-9]+)|([0-9]+\.[0-9]+)|(\d+)$/;
